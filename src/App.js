@@ -1,13 +1,15 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import Register from './Register/Register';
+import Navigation from './Navigation'
 import Login from './Login/Login';
-
+import {BrowserRouter} from 'react-router-dom'
 function App() {
   return (
     <div className="App">
-      <Register />
-      {/* <Login/> */}
+      {/* <BrowserRouter> */}
+      <Navigation/>
+        {/* <Login/> */}
+      {/* </BrowserRouter> */}
     </div>
   );
 }

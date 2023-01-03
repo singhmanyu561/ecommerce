@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import {Link,useNavigate} from 'react-router-dom'
+import './Register.css'
 
 const Register = () => {
-
+    const navigate = useNavigate();
     const [name,setName] = useState('');
     const [email,setEmail] = useState('');
     const [phone,setPhone] = useState('');
@@ -36,10 +38,12 @@ const Register = () => {
         setEmail('')
         setPhone('')
         setPassword('')
+
+        navigate("/login")
     }
 
     return (
-        <div>
+        <div class="register">
             <h1>Register</h1>
             <form onSubmit={submitForm}>
                 <input 
@@ -61,7 +65,7 @@ const Register = () => {
                 />
                 <br/>
                 <input 
-                    type="number"  
+                    type="text"  
                     name="phone" 
                     value={phone} 
                     onChange={e => setPhone(e.target.value)}
@@ -80,6 +84,8 @@ const Register = () => {
                 <br/>
                 <input type="submit" />
             </form>
+            <br/>
+            <Link to="/login">Already have an account?</Link>
         </div>
     );
 }

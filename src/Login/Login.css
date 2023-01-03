@@ -1,0 +1,14 @@
+
+
+.moveToReg{
+    background-color: aquamarine;
+}
+
+.moveToReg :hover{
+    cursor: pointer;
+    color: red;
+}
+
+form *{
+    margin-top: 10px;
+}

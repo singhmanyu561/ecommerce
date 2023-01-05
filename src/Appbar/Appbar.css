@@ -1,0 +1,66 @@
+.appbar{
+    display: flex;
+    background-color: black;
+}
+
+.appbar div:not(.appbar-middle,.profile,.cart){
+    color: white;
+    margin: 20px 20px 20px 20px;
+    padding: 15px;
+    font-size: 18px;
+    text-align: center;
+    width: 4%;
+}
+
+.appbar div:hover:not(.appbar-middle,.profile,.cart){
+     cursor: pointer;
+     background-color: #726f6f;
+     border-radius: 20px;
+}
+
+.appbar-left{
+    display: flex;
+}
+
+.appbar-right{
+    display: flex;
+}
+
+.appbar-middle{
+    font-size: 42px;
+    color: white;
+    padding: 10px 8% 10px 10px;
+    text-align: center;
+    width: 65%;
+}
+
+.profile{
+    color: white;
+    margin: 20px 4% 20px 20px;
+    /* padding: 10px; */
+    font-size: 18px;
+    text-align: center;
+    width: 4%;
+}
+
+.cart{
+    color: white;
+    margin: 20px 20px 20px 20px;
+    /* padding: 10px; */
+    font-size: 18px;
+    text-align: center;
+    width: 4%;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}

@@ -34,10 +34,10 @@ const Login = () => {
     }
 
     return (
-        <div>
+        <div class="login-parent">
             <div class="login">
                 <h1>Login</h1>
-                <form onSubmit={login}>
+                <form >
                     <input 
                         type="email"  
                         name="email" 
@@ -52,12 +52,15 @@ const Login = () => {
                         name="password" 
                         value={password} 
                         onChange={e => setPassword(e.target.value)}
-                        placeholder="password"
+                        placeholder="Password"
                         required
                     />
                     <br/>
-                    <input type="submit" name="Login"/>
                 </form>
+                <br/>
+                    <button onClick={login}>Login</button>
+                <br/><br/>
+                <Link to="/register">Forgot Password?</Link>
                 <br/>
                 <Link to="/register">Don't have an account?</Link>
             </div>

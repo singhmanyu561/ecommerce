@@ -1,6 +1,9 @@
 .appbar{
     display: flex;
-    background-color: black;
+    /* background-color: black; */
+    /* position: relative; */
+    top: 0px;
+    width: 100%;
 }
 
 .appbar div:not(.appbar-middle,.profile,.cart){
@@ -8,13 +11,14 @@
     margin: 20px 20px 20px 20px;
     padding: 15px;
     font-size: 18px;
+    font-weight: bolder;
     text-align: center;
-    width: 4%;
+    width: fit-content;
 }
 
 .appbar div:hover:not(.appbar-middle,.profile,.cart){
      cursor: pointer;
-     background-color: #726f6f;
+     background-color: #b7b4b4;
      border-radius: 20px;
 }
 
@@ -31,25 +35,25 @@
     color: white;
     padding: 10px 8% 10px 10px;
     text-align: center;
-    width: 65%;
+    width: 100%;
 }
 
 .profile{
     color: white;
-    margin: 20px 4% 20px 20px;
+    /* margin: 20px 4% 20px 20px; */
     /* padding: 10px; */
     font-size: 18px;
     text-align: center;
-    width: 4%;
+    /* width: 4%; */
 }
 
 .cart{
     color: white;
-    margin: 20px 20px 20px 20px;
+    /* margin: 20px 20px 20px 20px; */
     /* padding: 10px; */
     font-size: 18px;
     text-align: center;
-    width: 4%;
+    /* width: 4%; */
 }
 
 .col-1 {width: 8.33%;}

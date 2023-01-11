@@ -43,49 +43,52 @@ const Register = () => {
     }
 
     return (
-        <div class="register">
-            <h1>Register</h1>
-            <form onSubmit={submitForm}>
-                <input 
-                    type="text"  
-                    name="name" 
-                    value={name} 
-                    onChange={e => setName(e.target.value)}
-                    placeholder="Name"
-                    required
-                />
+        <div class="register-parent">
+            <div class="register">
+                <h1>Register</h1>
+                <form >
+                    <input 
+                        type="text"  
+                        name="name" 
+                        value={name} 
+                        onChange={e => setName(e.target.value)}
+                        placeholder="Name"
+                        required
+                    />
+                    <br/>
+                    <input 
+                        type="email"  
+                        name="email" 
+                        value={email} 
+                        onChange={e => setEmail(e.target.value)}
+                        placeholder="Email"
+                        required
+                    />
+                    <br/>
+                    <input 
+                        type="text"  
+                        name="phone" 
+                        value={phone} 
+                        onChange={e => setPhone(e.target.value)}
+                        placeholder="Phone"
+                        required
+                    />
+                    <br/>
+                    <input 
+                        type="password"  
+                        name="password" 
+                        value={password} 
+                        onChange={e => setPassword(e.target.value)}
+                        placeholder="password"
+                        required
+                    />
+                    <br/>
+                </form>
                 <br/>
-                <input 
-                    type="email"  
-                    name="email" 
-                    value={email} 
-                    onChange={e => setEmail(e.target.value)}
-                    placeholder="Email"
-                    required
-                />
-                <br/>
-                <input 
-                    type="text"  
-                    name="phone" 
-                    value={phone} 
-                    onChange={e => setPhone(e.target.value)}
-                    placeholder="Phone"
-                    required
-                />
-                <br/>
-                <input 
-                    type="password"  
-                    name="password" 
-                    value={password} 
-                    onChange={e => setPassword(e.target.value)}
-                    placeholder="password"
-                    required
-                />
-                <br/>
-                <input type="submit" />
-            </form>
-            <br/>
-            <Link to="/login">Already have an account?</Link>
+                <button onClick={submitForm}>Login</button>
+                <br/><br/>
+                <Link to="/login">Already have an account?</Link>
+            </div>
         </div>
     );
 }

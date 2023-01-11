@@ -16,14 +16,14 @@ const Appbar = () => {
     return(
         <div>
             <div class="appbar">
-                <div >Home</div>
-                <div >Shop</div>
-                <div >Contact</div>
-                <div class="appbar-middle">Dummy Shop</div>
-                <div class="cart">
+                <div class="col-1">Home</div>
+                <div class="col-1">Shop</div>
+                <div class="col-1">Contact</div>
+                <div class="appbar-middle col-6">Dummy Shop</div>
+                <div class="cart col-1">
                     <LocalMallOutlinedIcon style={{fontSize:'50px'}}/>
                 </div>
-                <div onClick={logout} class="profile">
+                <div onClick={logout} class="profile col-1">
                     <AccountCircleIcon style={{fontSize:'50px'}}/>
                 </div>
             </div>

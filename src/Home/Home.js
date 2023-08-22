@@ -1,51 +1,37 @@
 import React from "react";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate,Link } from "react-router-dom";
 import Appbar from "../Appbar/Appbar";
 import './Home.css';
 import Carousel from '../Carousel/Carousel';
-
+import Footer from "../Footer/Footer";
+import { CategoryData } from "../Data/CategoryData";
 const Home = () => {
     
+    let navigate = useNavigate();
+
+    const handleClick = (e) => {
+        e.preventDefault();
+        navigate(`/home/${e.target.name}`)
+    }
     return(
         <div class="home-parent">
             <Appbar />
             <Carousel />
             <div class="home">
-                <div class="parent">
-                    <div class="child">
-                        <button>SHOP MEN</button>
+            {
+                CategoryData.map((data,index) => (
+                    <div class="category-parent-main">
+                        <Link to={`/home/${data.name}`} class="home-link">
+                            <div class="category-parent">
+                                <div class="child" style={{backgroundImage: `url(${data.img})`}}></div>
+                            </div >
+                        </Link>
+                        <button onClick={handleClick} name={data.name}>{data.text}</button>
                     </div>
-                </div >
-                <div class="parent">
-                    <div class="child">
-                        <button>SHOP WOMEN</button>
-                    </div>
-
-                </div>
-                <div class="parent">
-                    <div class="child">
-                        <button>SHOP KIDS</button>
-                    </div>
-
-                </div>
-                <div class="parent">
-                    <div class="child">
-                        <button>SHOP HOMES</button>
-                    </div>
-
-                </div>
-                <div class="parent">
-                    <div class="child">
-                        <button>SHOP HOMES</button>
-                    </div>
-
-                </div>
-                <div class="parent">
-                    <div class="child">
-                        <button>SHOP HOMES</button>
-                    </div>
-                </div>
+                ))
+            }
             </div>
+            <Footer />
         </div>
     );
 }

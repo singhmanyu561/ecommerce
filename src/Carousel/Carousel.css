@@ -1,12 +1,9 @@
 .carousel-parent{
-    width:100%;
-    height:80vh;
-    /* border: 2px solid black; */
-    /* margin-left: 5%;; */
-    /* margin-top:50px; */
-    padding:0px;
-    /* border-radius: 20px; */
-    /* background-image: url("https://e0.pxfuel.com/wallpapers/846/1024/desktop-wallpaper-online-shopping-thumbnail.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 85vh; */
+    width: 100%;
+    height:85vh;
+}
+
+.carousel-parent img{
+    height: 85vh;
+    width: 100%;
 }

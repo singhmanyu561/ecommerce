@@ -10,7 +10,6 @@ function CorouselExample() {
           className="d-block w-100"
           src="https://t3.ftcdn.net/jpg/03/20/68/66/360_F_320686681_Ur6vdYQgDC9WiijiVfxlRyQffxOgfeFz.jpg"
           alt="First slide"
-          style={{height:'80vh'}}
         />
         <Carousel.Caption>
           <h3>60% DISCOUNTS ON HOMES</h3>
@@ -22,7 +21,6 @@ function CorouselExample() {
           className="d-block w-100"
           src="https://img.freepik.com/free-photo/full-length-portrait-happy-family_171337-2281.jpg?w=2000"
           alt="Second slide"
-          style={{height:'80vh'}}
         />
 
         <Carousel.Caption>
@@ -35,7 +33,6 @@ function CorouselExample() {
           className="d-block w-100"
           src="https://www.shutterstock.com/image-photo/cheerful-happy-woman-enjoying-shopping-260nw-1417347668.jpg"
           alt="Third slide"
-          style={{height:'80vh'}}
         />
 
         <Carousel.Caption>

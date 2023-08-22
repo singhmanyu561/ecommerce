@@ -16,16 +16,22 @@ const Appbar = () => {
     return(
         <div>
             <div class="appbar">
-                <div class="col-1">Home</div>
-                <div class="col-1">Shop</div>
-                <div class="col-1">Contact</div>
-                <div class="appbar-middle col-6">Dummy Shop</div>
-                <div class="cart col-1">
-                    <LocalMallOutlinedIcon style={{fontSize:'50px'}}/>
-                </div>
-                <div onClick={logout} class="profile col-1">
-                    <AccountCircleIcon style={{fontSize:'50px'}}/>
-                </div>
+                <div class="appbar-middle">ShopEXPRESS</div>
+                <span class="appbar-left ">
+                    <div class="col-1">Home</div>
+                    <div class="col-1">Shop</div>
+                    <div class="col-1">Contact</div>
+                    <div class="cart col-1">
+                        <LocalMallOutlinedIcon id="cart" />
+                    </div>
+                    <div onClick={logout} class="profile col-1">
+                        <AccountCircleIcon id="profile" />
+                    </div>
+                </span>
+                <span class="material-symbols-outlined col-5">
+                    menu
+                </span>
+                
             </div>
         </div>
     );

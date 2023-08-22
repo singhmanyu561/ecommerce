@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Home from '../Home/Home';
 import { Link,useNavigate } from 'react-router-dom';
-import './Login.css';
+import './Login2.css';
 
 const Login = () => {
 
@@ -35,34 +35,34 @@ const Login = () => {
 
     return (
         <div class="login-parent">
-            <div class="login">
+            <div class="login-image">
+                <img 
+                    src="https://freerangestock.com/sample/61264/online-shopping--laptop-to-shopping-cart.jpg"    
+                />
+            </div>
+            <div class="login-form">
                 <h1>Login</h1>
-                <form >
-                    <input 
-                        type="email"  
-                        name="email" 
-                        value={email} 
-                        onChange={e => setEmail(e.target.value)}
-                        placeholder="Email"
-                        required
-                    />
-                    <br/>
-                    <input 
-                        type="password"  
-                        name="password" 
-                        value={password} 
-                        onChange={e => setPassword(e.target.value)}
-                        placeholder="Password"
-                        required
-                    />
-                    <br/>
-                </form>
-                <br/>
-                    <button onClick={login}>Login</button>
-                <br/><br/>
-                <Link to="/register">Forgot Password?</Link>
-                <br/>
-                <Link to="/register">Don't have an account?</Link>
+                <input 
+                    type="email"  
+                    name="email" 
+                    id="email"
+                    value={email} 
+                    onChange={e => setEmail(e.target.value)}
+                    placeholder="Email"
+                    required
+                 />
+                {/* <label>Password</label> */}
+                <input 
+                    type="password"  
+                    name="password" 
+                    value={password} 
+                    onChange={e => setPassword(e.target.value)}
+                    placeholder="Password"
+                    required
+                />
+                <button onClick={login}>Login</button>
+                <Link to="/register"><span>Forgot Password?</span></Link>
+                <Link to="/register"><span>Don't have an account?</span></Link>
             </div>
         </div>
     );
